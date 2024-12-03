@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .phone::-webkit-scrollbar {
+  display: none;
+}
+main .phone {
+  height: 450px;
+  width: 280px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 1em;
+  overflow-y: scroll;
+  position: relative;
+}
+main .phone .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .phone .top h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-top: -0.3em;
+}
+main .phone .top .topright {
+  display: flex;
+  gap: 1em;
+}
+main .phone .status {
+  margin-top: 25px;
+  font-family: arial;
+}
+main .phone .status h4 {
+  font-weight: 300;
+}
+main .phone .mystatus {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 20px;
+}
+main .phone .mystatus img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+main .phone .mystatus .mystatusR {
+  margin-top: 10px;
+}
+main .phone .mystatus .mystatusR h4 {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+main .phone .mystatus .mystatusR h5 {
+  font-size: 0.7em;
+  margin-top: 0.2em;
+  opacity: 0.6;
+  font-weight: 400;
+}
+main .phone .resent {
+  margin-top: 10px;
+  opacity: 0.7;
+  font-weight: 200;
+}
+main .phone .allStatus {
+  display: flex;
+  gap: 1em;
+  margin-top: 15px;
+  flex-direction: column;
+}
+main .phone .allStatus .first {
+  display: flex;
+  gap: 1em;
+}
+main .phone .allStatus .first img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid greenyellow;
+}
+main .phone .allStatus .first .allstatusR h4 {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+main .phone .allStatus .first .allstatusR h5 {
+  font-size: 0.7em;
+  margin-top: 0.2em;
+  opacity: 0.6;
+  font-weight: 400;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.modal .cros {
+  z-index: 111;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  left: 57%;
+  top: 21%;
+}
+.modal img {
+  height: 450px;
+  width: 278px;
+  border-radius: 1em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
